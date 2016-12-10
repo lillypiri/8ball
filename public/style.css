@@ -54,17 +54,20 @@ img {
     align-items: center;
     color: #e0efea;
     animation-name: fadein;
-    animation-duration: 3s;
+    animation-duration: 4s;
     animation-iteration-count: 1;
+    text-shadow: 0 0 0 rgba(255,255,255,1);
 
 }
 
 @keyframes fadein{
   0% {
-    opacity: 0;
+    color: rgba(255,255,255,0);
+    text-shadow: 0 0 50px rgba(255,255,255,1);
   }
   100% {
-    opacity: 1;
+    color: rgba(255, 255, 255, 1);
+    text-shadow: 0 0 0 rgba(255,255,255,1);
   }
 }
 
