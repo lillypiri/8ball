@@ -1,11 +1,77 @@
 body {
-  background: #CFFCC;
-  font-family: "Palatino";
+  background: #fb6565;
+  background-color: #ffc4c4;
+  background-size: 200px 250px;
+  background-repeat: repeat;
+  margin: 0 auto;
+  font-family: "Verdana", monospace;
+  line-height: 1.5;
+  padding: 40px 10px;
   font-size: 16px;
+  text-align: center;
+}
+
+.img {
+    max-width: 400px;
+    margin: auto;
+    position: relative;
+  }
+
+  .wiggly {
+      display: block;
+      margin: auto;
+      margin-bottom: auto;
+      transition: all 0.2s ease;
+      animation-name: wiggly;
+      animation-duration: 0.2s;
+      animation-iteration-count: 3;
+    }
+
+@keyframes wiggly{
+  0%, 100% {
+    transform: translate3d(0,0,0);
+  }
+  50% {
+    transform: translate3d(3px,10px,0);
+  }
+}
+
+
+img {
+    max-width: 100%;
+}
+
+.answer {
+    position: absolute;
+    top: 150px;
+    left: 150px;
+    width: 100px;
+    height: 105px;
+    font-size: 16px;
+    text-align: center;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    color: #e0efea;
+    animation-name: fadein;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+
+}
+
+@keyframes fadein{
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.answer-content {
+
 }
 
 h1 {
-  color: #ff5050;
-  text-align: center;
   font-size: 20px;
 }
