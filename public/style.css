@@ -1,10 +1,12 @@
 body {
   background: #fb6565;
-  background-color: #ffc4c4;
+  background-color: #f9fbd2;
   background-size: 200px 250px;
+  background-image: url("/background.png");
   background-repeat: repeat;
   margin: 0 auto;
   font-family: "Verdana", monospace;
+  color: #131649;
   line-height: 1.5;
   padding: 40px 10px;
   font-size: 16px;
@@ -43,14 +45,13 @@ img {
 
 .answer {
     position: absolute;
-    top: 150px;
-    left: 150px;
-    width: 100px;
-    height: 105px;
+    top: 35%;
+    left: 35%;
+    width: 30%;
+    height: 30%;
     font-size: 16px;
     text-align: center;
     display: flex;
-    align-content: center;
     align-items: center;
     color: #e0efea;
     animation-name: fadein;
@@ -72,6 +73,7 @@ img {
 }
 
 .answer-content {
+  width: 100%;
 
 }
 
